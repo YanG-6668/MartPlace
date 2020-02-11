@@ -1,14 +1,103 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+// font-family: 'Quicksand', sans-serif;
+
+.header {
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__top {
+    background-color: #eef1f3;
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
 }
 
-.text{
+.header__logo {
+    display: flex;
+    align-items: center;
     
-    justify-content: space-between;
-    padding-left: 5px;
+    &-text{
+        font-size: 30px;
+        line-height: 28px;
+        span{
+            color: #0674ec;
+        }
+        a{
+            color: #000;
+        }
+    }
 }
+
+.header__btn {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 6px 17px;
+    width: 140px;
+    color: #fff;
+    border-radius: 25px;
+    background-color: #0674ec;
+    margin-right: 390px;
+
+}
+.header__boss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu__list {
+    display: flex;
+    li{
+        display: inline-block;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500; 
+       
+        & + li{
+            margin-left: 30px;
+        }
+        a{
+            color: #333333;
+            text-transform: uppercase;
+            font-size: 15px;
+            line-height: 42px;
+            
+        }
+    }
+}
+.header__search {
+    max-width: 360px;
+    position: relative;
+    input{
+        display: block;
+        width: 100%;
+        border-radius: 25px;
+        border: 1px solid #d9dfe5;
+        height: 46px;
+        font-size: 15px;
+        line-height: 30px; 
+        padding-left: 25px;
+        padding-right: 70px;
+        outline: none;
+        &::placeholder{
+            color: #898f96;
+        }
+    }
+    button{
+        position: absolute;
+        background-color: #0674ec;
+        border: none;
+        width: 70px;
+        height: 46px;
+        border-radius: 30px;
+        right: 0;
+        top: 0;
+        outline: none;
+    }
+}
+

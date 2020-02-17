@@ -309,45 +309,383 @@
 
     <section class="products">
         <div class="container">
-            <div class="products__title">
-
+            <div class="products__top">
+                <div class="products__top-title">
+                    Newest Release Products
+                </div>
+                <div class="products__top-filter">
+                    Filter by:
+                    <button type="submit"><img src="images/icons/three-dot.png" alt=""></button>
+                </div>
             </div>
+
             <div class="products__inner">
                 <div class="products__inner-btn">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button type="button" data-filter=".category-plugins">Plugins</button>
+                    <button type="button" data-filter=".category-wordPress">WordPress</button>
+                    <button type="button" data-filter=".category-siteTemlate">Site Template</button>
+                    <button type="button" data-filter=".category-psdTemplate">PSD Template</button>
+                    <button type="button" data-filter=".category-joomla">Joomla</button>
+                    <button type="button" data-filter=".category-userInterface">User Interface</button>
+                    <button type="button" data-filter=".category-landingPage">Landing Page</button>
+                    <button type="button" data-filter=".category-software">Software</button>
                 </div>
                 <div class="products__inner-box">
-                    <div class="products__item">
-                        <div class="products__item-img" style="background-image: url();"></div>
+                    <div class="products__item mix category-plugins category-new" data-order="1">
+                        <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
                         <div class="products__item-content">
                             <div class="products__item-title">
                                 E-commerce Shopping Cart
                             </div>
                             <div class="products__item-author">
-                                <a href="#"><img src="" alt=""></a>
-                                <a href="">Theme-Valley</a>
-                                <a href="">Plugin</a>
+                                <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                                <div class="name__company">Theme-Valley</div>
+                                <a class="plugin" href="">Plugin</a>
                             </div>
                             <div class="products__item-text">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                             </div>
-                            <div class="products__item-price-like-buy">
-                                <div class="products__item-price">$20</div>
-                                <div class="products__item-like"></div>
+                        </div>
+                        <div class="products__item-price">
+                            <a href="#" class="products__item-money">$20</a>
+                            <div class="products__item-like">90</div>
+                            <div class="products__item-buy">246</div>
+                        </div>
+                    </div>
+
+                    <div class="products__item mix category-wordPress" data-order="2">
+                        <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                        <div class="products__item-content">
+                            <div class="products__item-title">
+                                E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-author">
+                                <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                                <div class="name__company">Theme-Valley</div>
+                                <a class="plugin" href="">Plugin</a>
+                            </div>
+                            <div class="products__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                             </div>
                         </div>
+                        <div class="products__item-price">
+                            <a href="#" class="products__item-money">$20</a>
+                            <div class="products__item-like">90</div>
+                            <div class="products__item-buy">246</div>
+                        </div>
+
+                    </div>
+
+                    <div class="products__item mix category-plugins" data-order="3">
+                        <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                        <div class="products__item-content">
+                            <div class="products__item-title">
+                                E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-author">
+                                <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                                <div class="name__company">Theme-Valley</div>
+                                <a class="plugin" href="">Plugin</a>
+                            </div>
+                            <div class="products__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="products__item-price">
+                            <a href="#" class="products__item-money">$20</a>
+                            <div class="products__item-like">90</div>
+                            <div class="products__item-buy">246</div>
+                        </div>
+
+                    </div>
+
+                    <div class="products__item mix category-software category-new" data-order="4">
+                        <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                        <div class="products__item-content">
+                            <div class="products__item-title">
+                                E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-author">
+                                <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                                <div class="name__company">Theme-Valley</div>
+                                <a class="plugin" href="">Plugin</a>
+                            </div>
+                            <div class="products__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="products__item-price">
+                            <a href="#" class="products__item-money">$20</a>
+                            <div class="products__item-like">90</div>
+                            <div class="products__item-buy">246</div>
+                        </div>
+
+                    </div>
+
+                    <div class="products__item mix category-joomla" data-order="5">
+                        <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                        <div class="products__item-content">
+                            <div class="products__item-title">
+                                E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-author">
+                                <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                                <div class="name__company">Theme-Valley</div>
+                                <a class="plugin" href="">Plugin</a>
+                            </div>
+                            <div class="products__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="products__item-price">
+                            <a href="#" class="products__item-money">$20</a>
+                            <div class="products__item-like">90</div>
+                            <div class="products__item-buy">246</div>
+                        </div>
+
+                    </div>
+
+                    <div class="products__item mix category-plugins category-new" data-order="6">
+                        <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                        <div class="products__item-content">
+                            <div class="products__item-title">
+                                E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-author">
+                                <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                                <div class="name__company">Theme-Valley</div>
+                                <a class="plugin" href="">Plugin</a>
+                            </div>
+                            <div class="products__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="products__item-price">
+                            <a href="#" class="products__item-money">$20</a>
+                            <div class="products__item-like">90</div>
+                            <div class="products__item-buy">246</div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+            <div class="products__button-btn">
+                <button type="button" data-filter=".category-new">All New Products</button>
+            </div>
         </div>
     </section>
+
+
+
+    <div class="slider__second">
+        <div class="container">
+            <div class="slider__inner-title-arrows">
+                Your Followers Feed
+                <div class="slider__inner-arrows"></div>
+            </div>
+            <div class="slider__second-inner">
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+                <div class="products__item slider__second-item">
+                    <div class="products__item-img" style="background-image: url(images/product-pic.png);"></div>
+                    <div class="products__item-content">
+                        <div class="products__item-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="products__item-author">
+                            <a class="avatar" href="#"><img src="images/slider-avatar.png" alt=""></a>
+                            <div class="name__company">Theme-Valley</div>
+                            <a class="plugin" href="">Plugin</a>
+                        </div>
+                        <div class="products__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="products__item-price">
+                        <a href="#" class="products__item-money">$20</a>
+                        <div class="products__item-like">90</div>
+                        <div class="products__item-buy">246</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 

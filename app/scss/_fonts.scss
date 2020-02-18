@@ -7,8 +7,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?jc4rdm');
-    src: url('../fonts/icomoon.eot?jc4rdm#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?jc4rdm') format('truetype'), url('../fonts/icomoon.woff?jc4rdm') format('woff'), url('../fonts/icomoon.svg?jc4rdm#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?u6cbtx');
+    src: url('../fonts/icomoon.eot?u6cbtx#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?u6cbtx') format('truetype'), url('../fonts/icomoon.woff?u6cbtx') format('woff'), url('../fonts/icomoon.svg?u6cbtx#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -29,10 +29,58 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-lock:before {
+    content: "\f023";
+}
+
+.icon-bar-chart:before {
+    content: "\f080";
+}
+
+.icon-bar-chart-o:before {
+    content: "\f080";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-briefcase:before {
+    content: "\f0b1";
+}
+
+.icon-cloud-download:before {
+    content: "\f0ed";
+}
+
 .icon-angle-left:before {
     content: "\f104";
 }
 
 .icon-angle-right:before {
     content: "\f105";
+}
+
+.icon-smile-o:before {
+    content: "\f118";
+}
+
+.icon-drivers-license-o:before {
+    content: "\f2c3";
+}
+
+.icon-id-card-o:before {
+    content: "\f2c3";
+}
+
+.icon-users:before {
+    content: "\e972";
+}
+
+.icon-magic-wand:before {
+    content: "\e997";
+}
+
+.icon-leaf:before {
+    content: "\e9a4";
 }

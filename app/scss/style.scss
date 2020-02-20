@@ -1038,20 +1038,15 @@
 
 //end support
 // start join
-.join {}
-
-.container-fluid {}
-
 .join__inner-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
-    background-image: linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
 }
 
 .join__item {
-    padding: 110px 0;
+    padding: 110px 0 100px 0;
     text-align: center;
     &-title {
         font-size: 36px;
@@ -1065,6 +1060,7 @@
 }
 
 .join__button-btn {
+    padding-top: 20px;
     button {
         color: #0674ec;
         background-color: #fff;
@@ -1072,3 +1068,182 @@
 }
 
 //   end join
+//footer start
+.footer {
+    background-color: #262b30;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 115px 0;
+    }
+}
+
+.footer__column {
+    max-width: 280px;
+    width: 100%;
+    &-menu {
+        max-width: 150px;
+    }
+    &-social {
+        max-width: 362px;
+    }
+    &-logo {
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .footer__logo {
+        padding-left: 5px;
+        font-size: 24px;
+        line-height: 22px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        a {
+            color: #fff;
+        }
+    }
+    &-title {
+        font-size: 18px;
+        line-height: 42px;
+        color: #ababab;
+        padding-bottom: 30px;
+    }
+    &-text {
+        font-size: 15px;
+        line-height: 28px;
+        color: #ababab;
+        padding-bottom: 15px;
+    }
+    &-list {
+        font-size: 15px;
+        line-height: 32px;
+        a {
+            color: #ababab;
+        }
+    }
+}
+
+.footer__info {
+    padding-top: 15px;
+    padding-left: 28px;
+    color: #ababab;
+    position: relative;
+    &-phone::before {
+        content: "\f095";
+        font-family: 'icomoon';
+        font-size: 16px;
+        line-height: 28px;
+        left: 0;
+        top: 10px;
+        position: absolute;
+        color: #ababab;
+    }
+    &-email::before {
+        content: "\e945";
+        font-family: 'icomoon';
+        font-size: 16px;
+        line-height: 28px;
+        left: 0;
+        top: 10px;
+        position: absolute;
+        color: #ababab;
+    }
+    &-adress::before {
+        content: "\f041";
+        font-family: 'icomoon';
+        font-size: 16px;
+        line-height: 28px;
+        left: 3px;
+        top: 15px;
+        position: absolute;
+        color: #ababab;
+    }
+}
+
+.footer__search {
+    max-width: 100%;
+    position: relative;
+    margin-top: 15px;
+    input {
+        display: block;
+        width: 100%;
+        border-radius: 25px;
+        border: 1px solid #d9dfe5;
+        height: 46px;
+        font-size: 15px;
+        line-height: 30px;
+        padding-left: 25px;
+        padding-right: 70px;
+        outline: none;
+        &::placeholder {
+            color: #ababab;
+        }
+    }
+    button {
+        position: absolute;
+        background-color: #0674ec;
+        color: #fff;
+        border: none;
+        width: 110px;
+        height: 46px;
+        border-radius: 30px;
+        right: 0;
+        top: 0;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.footer__social-link {
+    margin-top: 48px;
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 13px;
+        }
+    }
+    a {
+        width: 42px;
+        height: 42px;
+        background-image: url(../images/footer/sprites.png);
+    }
+}
+
+.link-facebook {
+    background-position: -42px 0;
+}
+
+.link-twitter {
+    background-position: -84px -42px;
+}
+
+.link-goodle {
+    background-position: 0 -42px;
+}
+
+.link-pinterest {
+    background-position: -84px 0;
+}
+
+.link-linkedin {
+    background-position: -42px -42px;
+}
+
+.link-basket {
+    background-position: 0 0;
+}
+
+.footer-copy {
+    background-color: #192027;
+}
+
+.footer__bottom {
+    text-align: center;
+    font-size: 15px;
+    line-height: 27px;
+    padding: 32px 0;
+    color: #999999;
+    span {
+        color: #fff;
+    }
+}
